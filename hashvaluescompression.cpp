@@ -300,7 +300,7 @@ void Decode() {
 
 }
 //..................................................................................................................................................
-//by default compressed file is created in c drive.
+//by default compressed bin file is stored in C drive....
 int main(int argc, char *arg[])
 {
 	char filename[200];
@@ -309,7 +309,7 @@ int main(int argc, char *arg[])
 	scanf_s("%d", &i, 1);
 	if (i == 1)
 	{
-		printf("Enter file path:\nhelp:c:\foldernames....\filename.txt\n");
+		printf("Enter file path:\nhelp:c:\\foldernames....\\filename.txt or bin\n");
 		getchar();
 		gets_s(filename, 200);
 		fopen_s(&in, filename, "r");
@@ -338,7 +338,7 @@ int main(int argc, char *arg[])
 	}
 	else if (i == 2)
 	{
-		printf("plese enter you destination path....\nex:c:\\foldername\\.....\n\t\t\tsuggestion : don't mention file name:\n");
+		printf("plese enter you destination path....\nex:c:\\foldername\\.....\n\tsuggestion : don't mention file name:\n");
 		char DEST[100];
 		getchar();
 		gets_s(DEST, 100);
